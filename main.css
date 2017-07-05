@@ -1,6 +1,61 @@
+* {
+  font-family: sans-serif;
+}
+
 .todo {
   width: 80vw;
   height: auto;
   max-width: 500px;
-  border: 1px dashed black;
+  border-width: 8px;
+  border-style: solid;
+  border-image: linear-gradient(#c3eaf4, #0f7791) 10;
 }
+
+.todo--header {
+  width: 100%;
+}
+
+.todo--menu {
+  background-color: #0b5366;
+  height: 10vw;
+  max-height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo--new { /* this is the add button presumably for a new list, disabling for now, but leaving in html*/
+  display: none;
+}
+
+.todo--title {
+  color: white;
+  font-size: 1.3em;
+}
+.todo--date {
+  /*border: 1px dashed black;*/
+  color: #15a1c4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo--weekday {
+  padding-top: 1vw;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.todo--fulldate {
+  font-size: .8em;
+  padding-top: 2vw;
+}
+
+.todo--body {
+  margin: 2.5vw;
+
+  border-top: 1px solid #15a1c4;
+  border-bottom: 1px solid #15a1c4;
+}
+
