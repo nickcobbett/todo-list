@@ -29,7 +29,7 @@
 }
 
 .todo--title {
-  color: white;
+  color: #eaf6f9;
   font-size: 1.3em;
 }
 .todo--date {
@@ -42,7 +42,7 @@
 }
 
 .todo--weekday {
-  padding-top: 1vw;
+  padding-top: 2vw;
   font-weight: bold;
   font-size: 1.6em;
 }
@@ -53,9 +53,45 @@
 }
 
 .todo--body {
-  margin: 2.5vw;
-
-  border-top: 1px solid #15a1c4;
-  border-bottom: 1px solid #15a1c4;
+  margin-top: 2.5vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-top: 2px solid #15a1c4;
+  border-bottom: 2px solid #15a1c4;
+  color: #15a1c4;
 }
 
+.todo--items {
+  padding-left: 0;
+}
+
+.todo--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 10vw;
+  /*border: 1px dashed black;*/
+
+}
+
+.todo--button {
+  flex: 1;
+  max-width: 10px;
+  margin-right: 5px;
+  fill: #15a1c4;
+  /*display: flex;*/
+}
+
+.todo--checkmark {
+  flex: 1;
+  /*max-width: 5vw;*/
+}
+
+.todo--text {
+  flex: 1;
+  /*width: 10px;*/
+}
+
+.todo--delete {
+  fill: #15a1c4;
+}
