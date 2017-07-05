@@ -1,0 +1,6 @@
+.todo {
+  width: 80vw;
+  height: auto;
+  max-width: 500px;
+  border: 1px dashed black;
+}
