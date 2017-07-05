@@ -1,14 +1,16 @@
 * {
   font-family: sans-serif;
+  fill: #15a1c4;
 }
 
 .todo {
   width: 80vw;
   height: auto;
   max-width: 500px;
-  border-width: 8px;
+  border-width: 5px;
   border-style: solid;
   border-image: linear-gradient(#c3eaf4, #0f7791) 10;
+  background-color: #eaf6f9;
 }
 
 .todo--header {
@@ -78,20 +80,44 @@
   flex: 1;
   max-width: 10px;
   margin-right: 5px;
-  fill: #15a1c4;
+  /*fill: #15a1c4;*/
   /*display: flex;*/
 }
 
 .todo--checkmark {
   flex: 1;
-  /*max-width: 5vw;*/
 }
 
 .todo--text {
   flex: 1;
-  /*width: 10px;*/
 }
 
 .todo--delete {
-  fill: #15a1c4;
+  /*fill: #15a1c4;*/
+}
+
+.todo--add {
+  margin-top: 2.5vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 2.5vw;
+  /*border-top: 2px solid #15a1c4;*/
+  /*border-bottom: 2px solid #15a1c4;*/
+  color: #15a1c4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+textarea {
+  width: 80%;
+  border-color: #15a1c4;
+  color: #15a1c4;
+}
+textarea::placeholder {
+  color: #15a1c4;
+}
+
+.todo--create {
+  margin-right: 2vw;
 }
