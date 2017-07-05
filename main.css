@@ -1,6 +1,6 @@
 * {
   font-family: sans-serif;
-  fill: #15a1c4;
+  /*fill: #15a1c4;*/
 }
 
 .todo {
@@ -85,6 +85,7 @@
 }
 
 .todo--checkmark {
+  fill: #15a1c4;
   flex: 1;
 }
 
@@ -93,7 +94,12 @@
 }
 
 .todo--delete {
-  /*fill: #15a1c4;*/
+  fill: #15a1c4;;
+}
+
+
+.todo--delete.item--complete {
+  fill: #9dc2cc;
 }
 
 .todo--add {
@@ -120,4 +126,10 @@ textarea::placeholder {
 
 .todo--create {
   margin-right: 2vw;
+}
+
+.item--complete {
+  font-weight: lighter;
+  color: #9dc2cc;
+  fill: #9dc2cc;
 }

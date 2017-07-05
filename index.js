@@ -10,3 +10,6 @@ $('.todo--fulldate').text(function() {
   return monthNames[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
 });
 
+$('.todo--button').click(function() {
+  $(this).parent().children().toggleClass('item--complete')
+})
