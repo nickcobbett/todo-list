@@ -1,5 +1,7 @@
 var createListItem = function() {
   var text = $(this).parent().children().first().val();
+  $(this).parent().children().first().val(''); // resets the placeholder
+
   var item = $('.todo--item').clone(true).first();
   item.css('visibility', 'visible');
   item.css('display', 'inherit');

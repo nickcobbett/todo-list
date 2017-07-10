@@ -59,6 +59,7 @@
   margin-top: 2.5%;
   margin-left: 5%;
   margin-right: 5%;
+  /*height: auto;*/
   border-top: 2px solid #15a1c4;
   border-bottom: 2px solid #15a1c4;
   color: #15a1c4;
@@ -66,7 +67,9 @@
 
 .todo--items {
   padding-left: 0;
+  min-height: 20px;
   padding-top: 6px;
+  padding-bottom: 6px;
   display: flex;
   flex-flow: column;
 }
@@ -78,7 +81,7 @@
   justify-content: space-between;
   align-items: stretch;
   align-content: stretch;
-  max-height: 10vw;
+  /*max-height: 10vw;*/
   /*border: 1px dashed black;*/
 
 }
