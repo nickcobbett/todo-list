@@ -1,12 +1,11 @@
 var createListItem = function() {
   var text = $(this).parent().children().first().val();
   var item = $('.todo--item').clone(true).first();
+  item.css('visibility', 'visible');
+  item.css('display', 'inherit');
   item.find('.todo--text').text(text);
   $('.todo--items').append(item);
-}
-
-
-
+};
 
 
 var date = new Date();
