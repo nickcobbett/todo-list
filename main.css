@@ -5,12 +5,13 @@
 
 .todo {
   width: 80vw;
-  height: auto;
+  /*height: auto;*/
   max-width: 500px;
   border-width: 5px;
   border-style: solid;
   border-image: linear-gradient(#c3eaf4, #0f7791) 10;
   background-color: #eaf6f9;
+
 }
 
 .todo--header {
@@ -44,20 +45,20 @@
 }
 
 .todo--weekday {
-  padding-top: 2vw;
+  padding-top: 2%;
   font-weight: bold;
   font-size: 1.6em;
 }
 
 .todo--fulldate {
   font-size: .8em;
-  padding-top: 2vw;
+  padding-top: 2%;
 }
 
 .todo--body {
-  margin-top: 2.5vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-top: 2.5%;
+  margin-left: 5%;
+  margin-right: 5%;
   border-top: 2px solid #15a1c4;
   border-bottom: 2px solid #15a1c4;
   color: #15a1c4;
@@ -65,12 +66,17 @@
 
 .todo--items {
   padding-left: 0;
+  display: flex;
+  flex-flow: column;
 }
 
 .todo--item {
+  flex: 1;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  align-content: stretch;
   max-height: 10vw;
   /*border: 1px dashed black;*/
 
@@ -79,9 +85,10 @@
 .todo--button {
   flex: 1;
   max-width: 10px;
-  margin-right: 5px;
+  margin-right: 10px;
   /*fill: #15a1c4;*/
   /*display: flex;*/
+  /*position: relative;*/
 }
 
 .todo--checkmark {
@@ -91,6 +98,9 @@
 
 .todo--text {
   flex: 1;
+  align-items: stretch;
+  align-content: stretch;
+  /*overflow: hidden;*/
 }
 
 .todo--delete {
@@ -98,15 +108,11 @@
 }
 
 
-.todo--delete.item--complete {
-  fill: #9dc2cc;
-}
-
 .todo--add {
-  margin-top: 2.5vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-bottom: 2.5vw;
+  margin-top: 2.5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2.5%;
   /*border-top: 2px solid #15a1c4;*/
   /*border-bottom: 2px solid #15a1c4;*/
   color: #15a1c4;
@@ -125,7 +131,12 @@ textarea::placeholder {
 }
 
 .todo--create {
-  margin-right: 2vw;
+  margin-right: 2%;
+  fill: #15a1c4;;
+}
+
+.todo--create svg {
+  fill: #15a1c4;;
 }
 
 .item--complete {

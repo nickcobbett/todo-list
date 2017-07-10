@@ -1,3 +1,14 @@
+var createListItem = function() {
+  var text = $(this).parent().children().first().val();
+  var item = $('.todo--item').clone(true).first();
+  item.find('.todo--text').text(text);
+  $('.todo--items').append(item);
+}
+
+
+
+
+
 var date = new Date();
 var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -11,5 +22,19 @@ $('.todo--fulldate').text(function() {
 });
 
 $('.todo--button').click(function() {
-  $(this).parent().children().toggleClass('item--complete')
-})
+  $(this).parent().children().toggleClass('item--complete');
+});
+
+$('.todo--delete').click(function() {
+  $(this).parent().remove();
+  // $('.todo--body').remove();
+});
+
+$('.todo--create').click(createListItem);
+
+
+
+
+
+
+
